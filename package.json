@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev .",
-    "build": "vuepress build .",
+    "dev": "vuepress dev ./developers",
+    "build": "vuepress build ./developers",
     "deploy": "bash ./deploy.sh"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vuepress": "^1.2.0"
+  }
 }
