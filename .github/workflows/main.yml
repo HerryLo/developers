@@ -31,7 +31,7 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.0.7
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
-          ARGS: "-rltgoDzvO"
+          ARGS: "-avx --delete"
           SOURCE: "./developers/.vuepress/dist/"
           REMOTE_HOST: "47.111.149.160"
           REMOTE_USER: "root"
