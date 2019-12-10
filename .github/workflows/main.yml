@@ -33,6 +33,6 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
           ARGS: "-rltgoDzvO"
           SOURCE: "developers/.vuepress/dist"
-          REMOTE_HOST: "developers.didiheng.com"
-          REMOTE_USER: "herrylo"
+          REMOTE_HOST: "47.111.149.160"
+          REMOTE_USER: "root"
           TARGET: "/var/www/developers"
