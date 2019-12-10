@@ -1,13 +1,19 @@
 {
-  "name": "google-developers-copy",
+  "name": "copy-google-developers",
   "version": "1.0.0",
-  "description": "",
+  "description": "copy Google developers performance",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev ./developers",
     "build": "vuepress build ./developers",
     "deploy": "bash ./deploy.sh"
   },
+  "keywords": [
+    "Google developers",
+    "github pages",
+    "github actions"
+  ],
+  "homepage": "https://github.com/HerryLo/developers",
   "author": "",
   "license": "ISC",
   "dependencies": {

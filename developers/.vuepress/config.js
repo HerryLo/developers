@@ -19,6 +19,12 @@ module.exports = {
         ],
     },
     plugins: [
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': ''
+            }
+        ],
         '@vuepress/nprogress',
         '@vuepress/last-updated',
         '@vuepress/back-to-top',
