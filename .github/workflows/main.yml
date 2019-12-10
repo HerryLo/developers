@@ -15,10 +15,10 @@ jobs:
         with:
           args: git submodule update --init --recursive
       # 使用 node:10
-      - name: use Node.js 10.x
+      - name: use Node.js 10
         uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: 10
       # npm install
       - name: npm install and build
         run: |
@@ -28,7 +28,7 @@ jobs:
           CI: true
       # Deploy
       - name: Build and Deploy ACCESS_TOKEN
-        uses: easingthemes/ssh-deploy@v2.0.2
+        uses: easingthemes/ssh-deploy@v2.0.7
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
           ARGS: "-rltgoDzvO"
