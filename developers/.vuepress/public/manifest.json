@@ -1,0 +1,25 @@
+{
+    "name": "Google性能优化文档",
+    "short_name": "YB",
+    "start_url": "/",
+    "display": "standalone",
+    "description": "Yopai",
+    "background_color": "#fff",
+    "theme_color": "#3eaf7c",
+    "icons": [
+        {
+        "src": "/logo.jpg",
+        "sizes": "120x120",
+        "type": "image/png"
+        }
+    ],
+    "related_applications": [
+        {
+            "platform": "web"
+        },
+        {
+            "platform": "play",
+            "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+        }
+    ]
+}
