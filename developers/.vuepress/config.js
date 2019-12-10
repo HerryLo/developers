@@ -1,7 +1,10 @@
 module.exports = {
     base: '/',
-    title: "Yopai's Blog",
-    description: '拾人牙慧 不是技术的创造者，只是技术的搬运工',
+    title: "Google性能优化文档",
+    description: 'Yopai Blog 拾人牙慧 不是技术的创造者，只是技术的搬运工',
+    head: [
+        ['link', { rel: 'icon', href: '/logo.jpg' }]
+    ],
     themeConfig: {
         sidebarDepth: 5,
         repo: '',
@@ -20,13 +23,14 @@ module.exports = {
     },
     plugins: [
         [
-            '@vuepress/google-analytics',
+            '@vuepress/last-updated',
             {
-                'ga': ''
+                transformer: (timestamp, lang) => {
+                return new Date(timestamp).toLocaleString()
+                }
             }
         ],
         '@vuepress/nprogress',
-        '@vuepress/last-updated',
         '@vuepress/back-to-top',
         '@vuepress/active-header-links',
     ]
