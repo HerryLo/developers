@@ -18,7 +18,15 @@ module.exports = {
         ],
         sidebar: [
             ['/', '性能为何至关重要'],
-            '/rail/'
+            '/rail/',
+            {
+                title: 'Loading 性能',
+                children: [
+                    '/load-preformance/Overview',
+                    '/load-preformance/user-centric-performance-metrics'
+                ]
+            }
+            
         ],
     },
     plugins: [
